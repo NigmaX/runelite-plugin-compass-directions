@@ -1,4 +1,4 @@
-package com.compassdirections;
+package com.compassletters;
 
 import com.google.inject.Provides;
 import javax.inject.Inject;
@@ -8,17 +8,17 @@ import net.runelite.client.plugins.PluginDescriptor;
 import net.runelite.client.ui.overlay.OverlayManager;
 
 @PluginDescriptor(
-	name = "Compass Directions",
-	description = "Shows N, E, S and W on the minimap compass",
+	name = "Compass Letters",
+	description = "Adds E, S and W to the minimap compass, styled like the game's N",
 	tags = {"compass", "minimap", "north", "east", "south", "west"}
 )
-public class CompassDirectionsPlugin extends Plugin
+public class CompassLettersPlugin extends Plugin
 {
 	@Inject
 	private OverlayManager overlayManager;
 
 	@Inject
-	private CompassDirectionsOverlay overlay;
+	private CompassLettersOverlay overlay;
 
 	@Override
 	protected void startUp()
@@ -33,8 +33,8 @@ public class CompassDirectionsPlugin extends Plugin
 	}
 
 	@Provides
-	CompassDirectionsConfig provideConfig(ConfigManager configManager)
+	CompassLettersConfig provideConfig(ConfigManager configManager)
 	{
-		return configManager.getConfig(CompassDirectionsConfig.class);
+		return configManager.getConfig(CompassLettersConfig.class);
 	}
 }

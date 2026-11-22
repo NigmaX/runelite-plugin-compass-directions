@@ -1,13 +1,13 @@
-package com.compassdirections;
+package com.compassletters;
 
 import net.runelite.client.RuneLite;
 import net.runelite.client.externalplugins.ExternalPluginManager;
 
-public class CompassDirectionsPluginTest
+public class CompassLettersPluginTest
 {
 	public static void main(String[] args) throws Exception
 	{
-		ExternalPluginManager.loadBuiltin(CompassDirectionsPlugin.class);
+		ExternalPluginManager.loadBuiltin(CompassLettersPlugin.class);
 		RuneLite.main(args);
 	}
 }

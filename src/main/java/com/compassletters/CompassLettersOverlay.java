@@ -1,4 +1,4 @@
-package com.compassdirections;
+package com.compassletters;
 
 import java.awt.BasicStroke;
 import java.awt.Color;
@@ -24,7 +24,7 @@ import net.runelite.client.ui.overlay.Overlay;
 import net.runelite.client.ui.overlay.OverlayLayer;
 import net.runelite.client.ui.overlay.OverlayPosition;
 
-class CompassDirectionsOverlay extends Overlay
+class CompassLettersOverlay extends Overlay
 {
 	/** Compass widgets for fixed, resizable classic and resizable modern layouts. */
 	private static final int[] COMPASS_WIDGETS = {
@@ -37,10 +37,10 @@ class CompassDirectionsOverlay extends Overlay
 	private static final int NORTH_PROBE = 4 * 128;
 
 	private final Client client;
-	private final CompassDirectionsConfig config;
+	private final CompassLettersConfig config;
 
 	@Inject
-	CompassDirectionsOverlay(Client client, CompassDirectionsConfig config)
+	CompassLettersOverlay(Client client, CompassLettersConfig config)
 	{
 		this.client = client;
 		this.config = config;

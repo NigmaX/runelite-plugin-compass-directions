@@ -1,4 +1,4 @@
-package com.compassdirections;
+package com.compassletters;
 
 import java.awt.Color;
 import net.runelite.client.config.Config;
@@ -6,10 +6,10 @@ import net.runelite.client.config.ConfigGroup;
 import net.runelite.client.config.ConfigItem;
 import net.runelite.client.config.Range;
 
-@ConfigGroup(CompassDirectionsConfig.GROUP)
-public interface CompassDirectionsConfig extends Config
+@ConfigGroup(CompassLettersConfig.GROUP)
+public interface CompassLettersConfig extends Config
 {
-	String GROUP = "compassdirections";
+	String GROUP = "compassletters";
 
 	@ConfigItem(
 		keyName = "showNorth",

@@ -1,4 +1,4 @@
-# Compass Directions
+# Compass Letters
 
 A RuneLite plugin that adds **E**, **S** and **W** to the minimap compass, next to the game's own **N**.
 
